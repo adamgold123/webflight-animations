@@ -4,7 +4,7 @@
         console.log("Loading animations plugin.");
         this.cockpit = cockpit;
 
-        var mymenu = '<select id="Animations">'
+        var mymenu = '<select id="animations">'
         mymenu += '<option value="phiM30Deg">phiM30Deg</option>'
         mymenu += '<option value="phi30Deg">phi30Deg</option>'
         mymenu += '<option value="thetaM30Deg">thetaM30Deg</option>'
@@ -36,8 +36,8 @@
 
         $('#animate').click(function(ev) {
             ev.preventDefault();
-            var name = $("#animates").val() || "wave";
-            var duration = $("#duration").val() || 1000;
+            var name = $("#animations").val() || "wave";
+            var duration = $("#animate-duration").val() || 1000;
             animations.animate(name, duration);
         });
 
